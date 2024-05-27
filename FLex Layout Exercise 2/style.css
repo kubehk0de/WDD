@@ -1,0 +1,41 @@
+
+
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+img {
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+#flex {
+    display: flex;
+    max-width: 1000px;
+    gap: 20px;
+}
+
+
+@media (max-width:600px) {
+    #flex {
+        flex-direction: column;
+        max-width: 400px;
+    }
+}
+

@@ -1,0 +1,58 @@
+
+
+
+
+
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'Times New Roman', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    margin: 20px;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section > div:first-child {
+    background-color: aqua;
+}
+
+section > div:last-child {
+    background-color: yellow;
+}
+
+section > div:nth-child(2) {
+    background-color: orange;
+}
+
+section>div {
+
+    padding: 10px;
+    flex: 1;
+    margin: 10px;
+    height: 50vh;
+}
+
+
+@media (max-width: 800px) {
+    section {
+        flex-direction: column;
+        background-color: palevioletred
+        
+    }
+
+}
