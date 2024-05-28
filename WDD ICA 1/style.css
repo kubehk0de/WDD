@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+:root {
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+body {
+    font-family: Roboto, sans-serif
+}
+
+#fun {
+    display: flex;
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#problems {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(76, 76, 250);
+}
+
+#assist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: red;
+}
+
+#bullets {
+    font-size: 1.2rem;
+    margin-left: 1400px;
+    list-style-type: none;
+}
+
+#bullets li {
+    margin-bottom: 55px;
+    font-family: Righteous;
+    font-size: 1.6rem;
+}
+
+#dangers {
+    font-size: 1.2rem;
+    margin-right: 1700px;
+    list-style-type: none;
+    display: list-item;
+}
+
+#dangers li {
+    margin-bottom: 50px;
+    font-family: Righteous;
+    font-size: 1.6rem;
+}
+
+#helpful {
+    font-size: 1.2rem;
+    margin-left: 1400px;
+    list-style-type: none;
+    display: list-item;
+}
+
+#helpful li {
+    margin-bottom: 50px;
+    font-family: Righteous;
+    font-size: 1.6rem;
+}
+
+
+#fun, #problems, #assist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
