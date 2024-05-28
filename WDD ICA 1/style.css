@@ -46,33 +46,39 @@ body {
 #bullets {
     font-size: 1.2rem;
     margin-left: 1400px;
-    list-style-type: disc;
+    list-style-type: none;
 }
 
 #bullets li {
-    margin-bottom: 20px;
+    margin-bottom: 55px;
+    font-family: Righteous;
+    font-size: 1.6rem;
 }
 
 #dangers {
     font-size: 1.2rem;
     margin-right: 1700px;
-    list-style-type: disc;
+    list-style-type: none;
     display: list-item;
 }
 
 #dangers li {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    font-family: Righteous;
+    font-size: 1.6rem;
 }
 
 #helpful {
     font-size: 1.2rem;
     margin-left: 1400px;
-    list-style-type: disc;
+    list-style-type: none;
     display: list-item;
 }
 
 #helpful li {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    font-family: Righteous;
+    font-size: 1.6rem;
 }
 
 
