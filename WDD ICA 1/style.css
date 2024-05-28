@@ -15,16 +15,66 @@
     line-height: 1.2;
 }
 
-#section {
+body {
     font-family: Roboto, sans-serif
+}
+
+#fun {
+    display: flex;
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#problems {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(76, 76, 250);
+}
+
+#assist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: red;
 }
 
 #bullets {
     font-size: 1.2rem;
-    margin-left: 400px;
+    margin-left: 1400px;
+    list-style-type: disc;
+}
+
+#bullets li {
+    margin-bottom: 20px;
+}
+
+#dangers {
+    font-size: 1.2rem;
+    margin-right: 1700px;
     list-style-type: disc;
     display: list-item;
 }
+
+#dangers li {
+    margin-bottom: 20px;
+}
+
+#helpful {
+    font-size: 1.2rem;
+    margin-left: 1400px;
+    list-style-type: disc;
+    display: list-item;
+}
+
+#helpful li {
+    margin-bottom: 20px;
+}
+
 
 #fun, #problems, #assist {
     display: flex;
