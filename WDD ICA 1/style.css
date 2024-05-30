@@ -18,7 +18,7 @@
 body {
     width: 100%;
     overflow-x: hidden;
-    font-family: Roboto, sans-serif    
+    font-family: Roboto, sans-serif
 }
 
 video {
@@ -27,10 +27,14 @@ video {
 
 #fun {
     display: flex;
-    background-color: aqua;
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-image: url("1-Mega biodiverse/pexels-tirachard-kumtanom-112571-584302.jpg");
+    background-size: cover;
+    background-position: center;
+    border-bottom-style: dashed;
+    border-bottom: 200px;
 }
 
 #facts img {
@@ -39,6 +43,8 @@ video {
     max-width: 50%;
     max-height: 50%;
     object-fit: contain;
+    border-style: solid;
+    border-width: 10px;
 }
 
 #problems {
@@ -46,7 +52,19 @@ video {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: rgb(76, 76, 250);
+    background-image: url("6-Human Activity/pexels-catherinesheila-2409022.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#negative img {
+    margin-top: 200px;
+    width: 500px;
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: contain;
+    border-style: solid;
+    border-width: 10px;
 }
 
 #assist {
@@ -54,19 +72,33 @@ video {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: red;
+    background-image: url("7-Do Not Litter/pexels-mrwandart-2827735.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#help img {
+    margin-top: 200px;
+    width: 400px;
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: contain;
+    border-style: solid;
+    border-width: 10px;
 }
 
 #bullets {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-left: 1400px;
     list-style-type: none;
 }
 
 #bullets li {
+    color: white;
     margin-bottom: 55px;
     font-family: Righteous;
     font-size: 1.4rem;
+    font-weight: bold;
     transition: all 0.3s ease-out;
 }
 
@@ -84,9 +116,10 @@ video {
 }
 
 #dangers li {
+    color: rgb(255, 96, 96);
     margin-bottom: 50px;
     font-family: Righteous;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     transition: all 0.3s ease-out;
 }
 
@@ -112,6 +145,7 @@ video {
 }
 
 #helpful li {
+    color: white;
     margin-bottom: 50px;
     font-family: Righteous;
     font-size: 1.4rem;
