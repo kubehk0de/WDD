@@ -110,7 +110,7 @@ video {
 
 #dangers {
     font-size: 1.2rem;
-    margin-right: 1700px;
+    margin-right: 1600px;
     list-style-type: none;
     display: list-item;
 }
@@ -125,7 +125,6 @@ video {
 
 #dangers li:hover {
     transform: scale(1.2);
-    font-size: 1.2rem;
 }
 
 #dangers li img {
