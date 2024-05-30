@@ -22,6 +22,9 @@ body {
     
 }
 
+video {
+    display: block;
+}
 
 #fun {
     display: flex;
@@ -57,6 +60,11 @@ body {
     margin-bottom: 55px;
     font-family: Righteous;
     font-size: 1.6rem;
+    transition: all 0.3s ease-out;
+}
+
+#bullets li:hover {
+    transform: scale(1.2);
 }
 
 #dangers {
@@ -70,6 +78,11 @@ body {
     margin-bottom: 50px;
     font-family: Righteous;
     font-size: 1.6rem;
+    transition: all 0.3s ease-out;
+}
+
+#dangers li:hover {
+    transform: scale(1.2);
 }
 
 #helpful {
@@ -83,6 +96,11 @@ body {
     margin-bottom: 50px;
     font-family: Righteous;
     font-size: 1.6rem;
+    transition: all 0.3s ease-out;
+}
+
+#helpful li:hover {
+    transform: scale(1.2);
 }
 
 
