@@ -152,3 +152,15 @@ video {
     transform: translateY(0);
 }
 
+#sources {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: darkolivegreen;
+}
+
+#sourcelist {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
