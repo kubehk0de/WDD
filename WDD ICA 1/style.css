@@ -87,71 +87,33 @@ video {
     border-width: 10px;
 }
 
-#bullets {
-    font-size: 1.4rem;
-    margin-left: 1400px;
-    list-style-type: none;
+#diversetext, #fishtext, #coraltext, #overfishtext, #invasivetext, #humantext, #littertext, #assisttext, #environmenttext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: Roboto;
+    color: white;
+    font-weight: bold;
+    font-size: 2.3rem;
+    border: solid;
+    background-color: black;
+    max-width: 50%;
+    margin-left: 450px;
 }
 
-#bullets li {
+#fadepic1 li, #fadepic2 li, #fadepic3 li, #fadepic4 li, #fadepic5 li, #fadepic6 li, #fadepic7 li , #fadepic8 li , #fadepic9 li  {
     color: white;
     margin-bottom: 55px;
     font-family: Righteous;
     font-size: 1.4rem;
     font-weight: bold;
     transition: all 0.3s ease-out;
-}
-
-
-
-#bullets li:hover {
-    transform: scale(1.2);
-}
-
-#dangers {
-    font-size: 1.2rem;
-    margin-right: 1600px;
     list-style-type: none;
-    display: list-item;
 }
 
-#dangers li {
-    color: rgb(255, 96, 96);
-    margin-bottom: 50px;
-    font-family: Righteous;
-    font-size: 1.4rem;
-    transition: all 0.3s ease-out;
-}
-
-#dangers li:hover {
-    transform: scale(1.2);
-}
-
-#dangers li img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 50%;
-    height: auto;
-    transition: none;
-}
-
-#helpful {
-    font-size: 1.2rem;
-    margin-left: 1400px;
-    list-style-type: none;
-    display: list-item;
-}
-
-#helpful li {
-    color: white;
-    margin-bottom: 50px;
-    font-family: Righteous;
-    font-size: 1.4rem;
-    transition: all 0.3s ease-out;
-}
-
-#helpful li:hover {
+#fadepic1 li:hover, #fadepic2 li:hover, #fadepic3 li:hover, #fadepic4 li:hover, #fadepic5 li:hover, #fadepic6 li:hover, #fadepic7 li:hover, #fadepic8 li:hover, #fadepic9 li:hover {
     transform: scale(1.2);
 }
 
