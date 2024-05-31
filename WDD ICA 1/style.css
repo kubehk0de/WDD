@@ -6,7 +6,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
 }
 
 
@@ -39,7 +38,7 @@ video {
 
 #facts img {
     margin-top: 200px;
-    width: 500px;
+    width: 700px;
     max-width: 50%;
     max-height: 50%;
     object-fit: contain;
@@ -59,7 +58,7 @@ video {
 
 #negative img {
     margin-top: 200px;
-    width: 500px;
+    width: 700px;
     max-width: 50%;
     max-height: 50%;
     object-fit: contain;
@@ -79,7 +78,7 @@ video {
 
 #help img {
     margin-top: 200px;
-    width: 400px;
+    width: 700px;
     max-width: 50%;
     max-height: 50%;
     object-fit: contain;
@@ -103,20 +102,6 @@ video {
     margin-left: 450px;
 }
 
-#fadepic1 li, #fadepic2 li, #fadepic3 li, #fadepic4 li, #fadepic5 li, #fadepic6 li, #fadepic7 li , #fadepic8 li , #fadepic9 li  {
-    color: white;
-    margin-bottom: 55px;
-    font-family: Righteous;
-    font-size: 1.4rem;
-    font-weight: bold;
-    transition: all 0.3s ease-out;
-    list-style-type: none;
-}
-
-#fadepic1 li:hover, #fadepic2 li:hover, #fadepic3 li:hover, #fadepic4 li:hover, #fadepic5 li:hover, #fadepic6 li:hover, #fadepic7 li:hover, #fadepic8 li:hover, #fadepic9 li:hover {
-    transform: scale(1.2);
-}
-
 
 #fun, #problems, #assist {
     display: flex;
@@ -124,3 +109,46 @@ video {
     align-items: center;
     flex-direction: row;
 }
+
+#facts, #negative, #help {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#facts p, #negative p, #help p {
+    margin: 0;
+}
+
+.hovertext, .hovertext li {
+    cursor: pointer;
+    list-style-type: none;
+    text-align: center;
+    margin: 10px 0;
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border: solid;
+    background-color: rgb(63, 63, 63);
+    transition: transform 0.3s ease, font-size 0.3s ease;
+}
+
+.hovertext:hover {
+    transform: scale(1.2);
+}
+
+.content {
+    display: none;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    text-align: center;
+}
+
+.hovertext:hover + .content,
+.hovertext:hover + img + .content {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
