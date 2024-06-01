@@ -120,8 +120,7 @@ video {
     margin: 0;
 }
 
-.hovertext, .hovertext li {
-    cursor: pointer;
+.hovertext {
     list-style-type: none;
     text-align: center;
     margin: 10px 0;
@@ -130,11 +129,7 @@ video {
     font-weight: bold;
     border: solid;
     background-color: rgb(63, 63, 63);
-    transition: transform 0.3s ease, font-size 0.3s ease;
-}
-
-.hovertext:hover {
-    transform: scale(1.2);
+    transition: font-size 0.3s ease;
 }
 
 .content {
@@ -145,11 +140,25 @@ video {
     text-align: center;
 }
 
-.hovertext:hover + .content,
-.hovertext:hover + img + .content {
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.content.in-view {
     display: block;
     opacity: 1;
     transform: translateY(0);
+}
+
+.content.in-view {
+    animation: fadeInUp 0.5s ease forwards;
 }
 
 #sources {
@@ -164,7 +173,8 @@ video {
     flex-direction: column;
     padding-left: 10px;
 }
-@media (max-width: 575.98px) {
+
+@media (max-width: 576px) {
     :root {
         font-size: 16px;
     }
@@ -178,11 +188,75 @@ video {
         max-width: 90%;
         margin: 10px auto;
         font-size: 1.5rem;
+        border-radius: 90px;
     }
 
     .content {
+        display: flex;
+        justify-content: center;
+        align-content: center;
         max-width: 90%;
         padding: 10px;
+    }
+}
+
+@media (max-width: 540px) {
+        
+    .content {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    #diversetext , #fishtext, #coraltext, #overfishtext, #invasivetext, #humantext, #littertext, #assisttext, #environmenttext {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border: none;
+        color: red;
+    }
+}
+
+@media (max-width: 375px) {
+    :root {
+        font-size: 12px;
+    }
+    .content {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    #diversetext , #fishtext, #coraltext, #overfishtext, #invasivetext, #humantext, #littertext, #assisttext, #environmenttext {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border: none;
+        color: red;
+    }
+}
+
+@media (max-width: 430px) {
+    :root {
+        font-size: 15px;
+    }
+
+    #diversetext, #fishtext, #coraltext, #overfishtext, #invasivetext, #humantext, #littertext, #assisttext, #environmenttext {
+       display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border: none;
+        color: red;
+    }
+
+
+    .content {
+        display: flex;
+        justify-content: center;
+        align-content: center;
     }
 }
 
@@ -274,3 +348,6 @@ video {
         padding: 30px;
     }
 }
+
+
+
